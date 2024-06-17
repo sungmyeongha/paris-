@@ -1,0 +1,518 @@
+.main {
+padding-top: 90px;
+overflow: hidden;
+}
+
+.mySwiper {
+    position: relative;
+}
+.swiper-container {
+    position: relative;
+}
+.swiper-wrapper {
+    width: 100%;
+    display: flex;
+
+    padding-bottom: 25px;
+}
+.banner_img {
+    width: calc(100% /3);
+}
+
+.banner_img:hover  .main_black_pan {
+    opacity: 0;
+}
+
+.main_black_pan{ 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 100%;
+    background: black;
+    opacity: 0.3;
+}
+
+.gradient_pan {
+    width: 100%;
+    padding-bottom: 100%;
+    position: absolute;
+
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5));
+    display: none;
+}
+
+.pb_magazinet_pan {
+    width: 100%;
+    padding-bottom: 70%;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5))
+}
+
+.pb_story_img:hover .gradient_pan,
+.products_img:hover .gradient_pan,
+.promition_img:hover .gradient_pan {
+    display: block;
+}
+
+
+.banner_img > img {
+    width: 100%;
+}
+.banner_indi {
+    display: flex;
+    gap: 10px;
+    z-index: 99999;
+    justify-content: center;
+}
+.banner_active {
+    background-color: #023586;
+}
+
+.products_box {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    padding-bottom: 20%;
+}
+
+
+
+
+
+.main_right_btn {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ccc;
+    border-bottom: 0;
+    border-left: 0;
+    background: 50% 50% no-repeat;   
+    z-index: 99;
+    
+    position: absolute;
+    top: 45%;
+    right: 10px; 
+
+    transform: translateY(-50%)  rotate(45deg); 
+}
+.pro_right_btn {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ccc;
+    border-bottom: 0;
+    border-left: 0;
+    background: 50% 50% no-repeat;   
+    z-index: 99;
+    
+    position: absolute;
+    top: 29%;
+    right: 10px; 
+
+    transform: translateY(-50%)  rotate(45deg); 
+}
+.pro_left_btn {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ccc;
+    border-bottom: 0;
+    border-left: 0;
+    background: 50% 50% no-repeat;   
+    z-index: 99;
+    
+    position: absolute;
+    left: 10px;
+    top: 29%;
+
+    transform: translateY(-50%)  rotate(-135deg); 
+}
+
+.duct_right_btn {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ccc;
+    border-bottom: 0;
+    border-left: 0;
+    background: 50% 50% no-repeat;   
+    z-index: 99;
+    
+    position: absolute;
+    top: 58%;
+    right: 10px; 
+
+    transform: translateY(-50%)  rotate(45deg); 
+}
+.duct_left_btn {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ccc;
+    border-bottom: 0;
+    border-left: 0;
+    background: 50% 50% no-repeat;   
+    z-index: 99;
+    
+    position: absolute;
+    left: 10px;
+    top: 58%;
+
+    transform: translateY(-50%)  rotate(-135deg); 
+}
+.main_left_btn {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ccc;
+    border-bottom: 0;
+    border-left: 0;
+    background: 50% 50% no-repeat;   
+    z-index: 99;
+    
+    position: absolute;
+    left: 10px;
+    top: 45%;
+
+    transform: translateY(-50%)  rotate(-135deg); 
+}
+
+
+.main_promition {
+    padding: 160px 25px 0px 0;
+}
+
+.main_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.show_more {
+    border-bottom: 2px solid;
+}
+
+.promition_box {
+    position: relative;
+    width: 100%;
+    padding-bottom: 45%;
+    overflow: hidden;
+}
+.promition_img_box {
+    padding-top: 20px;
+    position: absolute;
+    width: calc((100% - 60px )/ 4);
+}
+.promition_img_box > p {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.promition_img {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+}
+
+.pro_img0 {
+    background: url(../포폴_img/파리바게트/promotion_img/promotion_img0.jpg) no-repeat center / cover;
+}
+.pro_img1 {
+    background: url(../포폴_img/파리바게트/promotion_img/promotion_img1.jpg) no-repeat center / cover;
+}
+.pro_img2 {
+    background: url(../포폴_img/파리바게트/promotion_img/promotion_img2.jpg) no-repeat center / cover;
+}
+.pro_img3 {
+    background: url(../포폴_img/파리바게트/promotion_img/promotion_img3.jpg) no-repeat center / cover;
+}
+.pro_img4 {
+    background: url(../포폴_img/파리바게트/promotion_img/promotion_img4.jpeg) no-repeat center / cover;
+}
+.main_products {
+    position: relative;
+    padding: 0px 25px 0 0;
+    
+}
+.products_box  {
+    overflow: hidden;
+}
+.products_img_box{
+    position: relative;
+    width: calc((100% - 80px ) / 5);
+}
+
+.products_img {
+    position: absolute;
+    width: 100%;
+    padding-bottom: 100%;
+}
+
+
+.item_img1{background: url(../포폴_img/파리바게트/item/item0.jpg) no-repeat center / cover;}
+.item_img2{background: url(../포폴_img/파리바게트/item/item1.jpg) no-repeat center / cover;}
+.item_img3{background: url(../포폴_img/파리바게트/item/item2.jpg) no-repeat center / cover;}
+.item_img4{background: url(../포폴_img/파리바게트/item/item3.jpg) no-repeat center / cover;}
+.item_img5{background: url(../포폴_img/파리바게트/item/item4.jpg) no-repeat center / cover;}
+.item_img6{background: url(../포폴_img/파리바게트/item/item5.jpg) no-repeat center / cover;}
+
+.main_pb_story {
+    padding-top: 100px;
+}
+.pb_story_imf {
+    display: flex;
+    flex-wrap: wrap;
+}
+.pb_story_box {
+    position: relative;
+    width: calc((100%) / 2);
+    display: flex;
+    padding-bottom: 135px;
+}
+
+.pb_story_img {
+    position: absolute;
+    width: 50%;
+    padding-bottom: 50%;
+}
+
+.story_img0 {background: url(../포폴_img/파리바게트/pb_story/pb_story0.jpg) no-repeat center / cover;}
+.story_img1 {background: url(../포폴_img/파리바게트/pb_story/pb_story1.jpg) no-repeat center / cover;}
+.story_img2 {background: url(../포폴_img/파리바게트/pb_story/pb_story2.jpg) no-repeat center / cover;}
+.story_img3 {background: url(../포폴_img/파리바게트/pb_story/pb_story3.jpg) no-repeat center / cover;}
+
+
+.pb_story_txt {
+    position: relative;
+    left: 50%;
+
+    width: 50%;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.blue {
+    color:  #023586;
+    font-weight: 400;
+    font-size: 14px;
+}
+.pb_story_txt > p{
+    font-size: 11px;
+}
+.pb_story_txt  > span {
+    font-size: 14px;
+}
+
+
+
+.main_pb_magazine {
+    position: relative;
+    padding: 100px 25px 43%;
+}
+
+.pb_magazine_box { 
+    width: calc((100% - 40px) / 3);
+    position: relative;
+}
+.pb_magazine_img {
+    position: absolute;
+    width: 100%;
+    padding-bottom: 135%;
+}
+.pb_maz_txt {
+    position: absolute;
+    bottom: 10px;
+    transform: translateX(- 50%);
+    padding: 0 20px;
+
+    color: white;
+}
+
+
+
+
+
+
+.magazine_img0 {background: url(../포폴_img/파리바게트/pb_magazine/pb_magazine0.jpg) no-repeat center / cover;}
+.magazine_img1 {background: url(../포폴_img/파리바게트/pb_magazine/pb_magzine1.png) no-repeat center / cover;}
+.magazine_img2 {background: url(../포폴_img/파리바게트/pb_magazine/pb_magazine2.png) no-repeat center / cover;}
+.main_instar {
+    text-align: center;
+    overflow-x: scroll;
+}
+.instar_title  {
+    width: 1939px;
+}
+.instar_img {
+    width: 100%;
+}
+.instar_img > img{
+    width: 100%;
+}
+
+@media screen and (max-width: 1090px) {
+    .content_area {
+        max-width:1090px;
+  
+    }
+    .promition_img_box {
+        padding-top: 20px;
+        position: absolute;
+        width: calc((100% - 40px )/ 3);
+    }
+}
+@media screen and (max-width: 990px) {
+
+    .content_area {
+        max-width:990px;
+  
+    }
+    .main {
+        padding-top: 60px;
+        }
+        .main_pb_magazine {
+
+            overflow: hidden;
+        }
+        .main_pb_magazine {
+            padding: 100px 0px 75%;
+        }
+        .pb_magazine_box {
+            width: calc((100% - 20px) / 2);
+        }
+
+
+        .pro_left_btn {
+            top: 39%;
+        }
+        .pro_right_btn {
+            top: 39%
+        }
+
+
+}
+
+
+
+@media screen and (max-width: 820px) {
+
+    .content_area {
+        max-width:820px;
+  
+    }
+    .promition_img_box {
+        width: calc((100% - 20px) / 2);
+    }
+    .promition_box {
+        padding-bottom: 75%;
+    }
+    .main_promition {
+        padding:0;
+    }
+    .magazine_img2 {
+        display: none;
+        background: url(../포폴_img/파리바게트/pb_magazine/pb_magazine2.png) no-repeat center / cover;
+    }
+
+    .pro_left_btn {
+        top: 33%;
+    }
+    .pro_right_btn {
+        top: 33%;
+    }
+
+    .products_img_box {
+        width: calc((100% - 60px) / 4);
+    }
+    .duct_right_btn {
+        width: 20px;
+        height: 20px;
+        top: 66%;
+    }
+    .duct_left_btn {
+        width: 20px;
+        height: 20px;
+        top: 66%;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .content_area{
+        max-width: 500px;
+    }
+
+    
+    .duct_right_btn {
+        top: 55%;
+    
+    }
+    .duct_left_btn {
+        top: 55%;
+    }
+    .content_area {
+        max-width:500px;
+    }
+
+    .promition_img_box {
+        width:100%;
+    }
+    .promition_box {
+        padding-bottom: 0%;
+        display: flex;
+        flex-direction:column ;
+    }
+    .promition_img_box {
+        position: static;
+    }
+
+    .main_products {
+        padding:0;
+    }
+    .products_img_box {
+        width:100% ;
+    }
+    .products_box {
+        padding-bottom: 100%;
+    }
+
+    .pb_story_txt {
+        height: 300px;
+    }
+    .pb_story_txt > span {
+        display: none;
+    } 
+    .pb_story_txt > h2 {
+       font-size: 18px;
+    } 
+    .pb_story_box {
+        padding-bottom: 10px; 
+    }
+    
+    .pb_magazine_box {
+        width: 100%;
+    }
+    .main_pb_magazine {
+        position: relative;
+        padding-bottom: 135%;
+    }
+
+    .top_btn {
+
+        width: 20px;
+        height: 20px;
+
+    }
+    .top_btn > span {
+        font-size: 18px;
+    }
+
+    .pro_left_btn {
+        display: none;
+    }
+    .pro_right_btn {
+        display: none;
+    }
+
+
+}
+
+        
+
